@@ -1,0 +1,12 @@
+name: proteomics
+title: proteomics
+username: tme34
+account: tme34
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13151498
+bundleId: 9858168
+url: https://tme34.shinyapps.io/proteomics/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
