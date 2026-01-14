@@ -1,0 +1,17 @@
+# --- R Specific ---
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Rapp.history
+
+# --- Shiny Specific ---
+# Optional: Ignore the rsconnect folder if you want to keep your 
+# deployment account details private.
+# app/rsconnect/
+
+# --- Data/Temp Files ---
+*.csv.gz
+*.xlsx
+.DS_Store
+Thumbs.db
