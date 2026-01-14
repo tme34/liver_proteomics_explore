@@ -27,7 +27,7 @@ To ensure biological relevance, the app allows users to filter proteins based on
 ### 🧬 Genetic Triangulation
 The app integrates genotype data for key genetic instruments for liver fat:
 * **PNPLA3** (rs738409), **TM6SF2** (rs58542926), and **HSD17B13** (rs72613567).
-* **$\beta$-$\beta$ Plot Mode:** Compare observational protein-trait effects against genetic-protein effects to assess causality.
+* **$\beta$-**$\beta$ Plot Mode:** Compare observational protein-trait effects against genetic-protein effects to assess causality.
 
 
 
@@ -52,3 +52,4 @@ The project is organized into a root directory containing the documentation and 
     ├── scRNA_enriched.csv       # Single-cell enrichment/specificity metrics
     ├── .Rhistory                # R session history (Local use only)
     └── rsconnect/               # Deployment metadata for shinyapps.io
+
