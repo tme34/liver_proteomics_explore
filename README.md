@@ -18,7 +18,7 @@ The application allows researchers to move beyond simple observational associati
 
 ## 🧪 Key Features
 
-### 🧫 Multiscale Biological Filtering (New)
+### 🧫 Multiscale Biological Filtering
 To ensure biological relevance, the app allows users to filter proteins based on their expression profiles across different scales:
 
 * **GTEx Bulk RNA-seq Integration:** Filter for **Liver-Specific** proteins. This ensures that the proteins being analyzed are predominantly expressed in liver tissue, reducing systemic noise.
@@ -37,23 +37,18 @@ The app integrates genotype data for key genetic instruments for liver fat:
 
 ---
 
-## 📈 Clinical Endpoints & Data Sources
-* **Imaging:** MRI-derived PDFF (Proton Density Fat Fraction).
-* **Clinical:** ICD-10 coded Cirrhosis and Hepatocellular Carcinoma (HCC).
-* **Proteomics:** Olink Explore 3072 panel (UKBB).
-* **Tissue Expression:** GTEx (v8) bulk RNA-seq and independent liver scRNA-seq datasets.
-
----
-
 ## 📂 File Structure
-* `app.R`: Core Shiny application code.
-* `/data/`: Pre-computed regression results, GTEx specificity indices, and scRNA-seq cell-type mappings.
-* `/www/`: UI assets and custom styling.
 
----
+The project is organized into a root directory containing the documentation and a dedicated `/app` folder containing the Shiny environment and databases:
 
-## 🚀 Getting Started
-
-### Prerequisites
-```r
-install.packages(c("shiny", "tidyverse", "plotly", "DT", "data.table"))
+```text
+├── README.md                   # Project documentation
+└── app/                        # Main application directory
+    ├── ui.R                    # User Interface script
+    ├── server.R                # Server logic and data processing
+    ├── proteomics_mri_ct1_dataset.csv     # Main UKBB regression results
+    ├── proteomics_mri_ct1_dataset_inv.csv # Inverse-normalized datasets
+    ├── average_protein_measurements_by_cell_type.csv # Cell-type expression data
+    ├── scRNA_enriched.csv       # Single-cell enrichment/specificity metrics
+    ├── .Rhistory                # R session history (Local use only)
+    └── rsconnect/               # Deployment metadata for shinyapps.io
