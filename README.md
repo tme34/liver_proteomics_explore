@@ -7,6 +7,11 @@
   <img src="https://img.shields.io/badge/Field-Proteomics%20%26%20Genetics-green" alt="Proteomics">
 </p>
 
+### 🌐 Live Application
+**Access the interactive app here:** [https://tme34.shinyapps.io/proteomics/](https://tme34.shinyapps.io/proteomics/)
+
+---
+
 ## 📋 Overview
 This **R Shiny** application is an interactive exploratory platform designed to analyze the intersection of **~3,000 Olink protein measurements** and **liver-related clinical endpoints** within the UK Biobank (UKBB).
 
@@ -27,7 +32,7 @@ To ensure biological relevance, the app allows users to filter proteins based on
 ### 🧬 Genetic Triangulation
 The app integrates genotype data for key genetic instruments for liver fat:
 * **PNPLA3** (rs738409), **TM6SF2** (rs58542926), and **HSD17B13** (rs72613567).
-* **$\beta$-**$\beta$ **Plot Mode:** Compare observational protein-trait effects against genetic-protein effects to assess causality.
+* **$\beta$-$\beta$ Plot Mode:** Compare observational protein-trait effects against genetic-protein effects to assess causality.
 
 
 
@@ -52,5 +57,3 @@ The project is organized into a root directory containing the documentation and 
     ├── scRNA_enriched.csv       # Single-cell enrichment/specificity metrics
     ├── .Rhistory                # R session history (Local use only)
     └── rsconnect/               # Deployment metadata for shinyapps.io
-
-
